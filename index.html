@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justice</title>
+    <!-- daisyui link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              "hero-img": "url('./images/banner.png')",
+            },
+            colors: {
+              theme: "#B68C5A",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- navbar section  -->
+    <header class="container mx-auto lg:px-20">
+      <nav class="flex justify-between py-2">
+        <div class="flex items-center">
+          <img class="h-7" src="./images/logo2.png" alt="" />
+        </div>
+        <ul class="flex items-center gap-5">
+          <li>Home</li>
+          <li>
+            Services
+            <i class="fa-solid fa-angle-right"></i>
+          </li>
+          <li>
+            Cases
+            <i class="fa-solid fa-angle-right"></i>
+          </li>
+          <li>
+            Blog
+            <i class="fa-solid fa-angle-right"></i>
+          </li>
+          <li>
+            Contact Us
+            <i class="fa-solid fa-angle-right"></i>
+          </li>
+        </ul>
+        <button class="btn bg-theme text-white hover:text-gray-800">
+          Free Consultation
+        </button>
+      </nav>
+    </header>
+    <main class="container mx-auto lg:px-20">
+      <!-- banner section -->
+      <section>
+        <div class="hero h-[calc(100vh-64px)] bg-hero-img rounded-lg">
+          <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-lg">
+              <h1 class="mb-5 text-5xl font-bold">
+                We Provide Effective <br />
+                Legal Solutions
+              </h1>
+              <p class="mb-5">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour.
+              </p>
+              <div class="pt-10">
+                <input
+                  class="input text-gray-800 w-96"
+                  type="text"
+                  placeholder="Search your services..."
+                />
+                <button
+                  class="btn bg-theme text-white hover:text-gray-800 border-none px-6 ml-3"
+                >
+                  Search
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- practice area section -->
+      <section class="my-24">
+        <h2 class="text-center text-3xl font-extrabold">
+          The Legal Practice Area
+        </h2>
+        <p class="max-w-lg py-5 text-center mx-auto">
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected
+          humour.
+        </p>
+        <div class="grid lg:grid-cols-3 sm:grid-cols-2 mt-8">
+          <!-- first practice -->
+          <div class="card px-12 rounded-none space-y-3 pt-16 pb-10">
+            <figure>
+              <img
+                src="/images/business.png"
+                alt=""
+              />
+            </figure>
+            <div class="card-body text-center">
+              <h2 class="text-center text-2xl font-semibold">Business Law</h2>
+              <p class="text-gray-500 text-sm font-medium">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              <div class="card-actions justify-center pt-5">
+                <button class="px-3 py-[0.45rem] bg-theme text-white hover:text-gray-800 border-none rounded-full"><i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+          <!-- second practice  -->
+          <div class="card px-12 rounded-none border-l-[1.5px] border-r-[1.5px] space-y-3 pt-16 pb-10">
+            <figure>
+              <img
+                src="/images/criminal.png"
+                alt=""
+              />
+            </figure>
+            <div class="card-body text-center">
+              <h2 class="text-center text-2xl font-semibold">Criminal Law</h2>
+              <p class="text-gray-500 text-sm font-medium">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              <div class="card-actions justify-center pt-5">
+                <button class="px-3 py-[0.45rem] bg-theme text-white hover:text-gray-800 border-none rounded-full"><i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+          <!-- third practice -->
+          <div class="card px-12 rounded-none space-y-3 pt-16 pb-10">
+            <figure>
+              <img
+                src="/images/child.png"
+                alt=""
+              />
+            </figure>
+            <div class="card-body text-center">
+              <h2 class="text-center text-2xl font-semibold">Child Support</h2>
+              <p class="text-gray-500 text-sm font-medium">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              <div class="card-actions justify-center pt-5">
+                <button class="px-3 py-[0.45rem] bg-theme text-white hover:text-gray-800 border-none rounded-full"><i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+          <!-- fourth practice -->
+          <div class="card px-12 rounded-none border-t-[1.5px] space-y-3 pt-16 pb-10">
+            <figure>
+              <img
+                src="/images/education.png"
+                alt=""
+              />
+            </figure>
+            <div class="card-body text-center">
+              <h2 class="text-center text-2xl font-semibold">Education Law</h2>
+              <p class="text-gray-500 text-sm font-medium">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              <div class="card-actions justify-center pt-5">
+                <button class="px-3 py-[0.45rem] bg-theme text-white hover:text-gray-800 border-none rounded-full"><i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+          <!-- fifth practice -->
+          <div class="card px-12 rounded-none border-b-0 border-[1.5px] space-y-3 pt-16 pb-10">
+            <figure>
+              <img
+                src="/images/divorce.png"
+                alt=""
+              />
+            </figure>
+            <div class="card-body text-center">
+              <h2 class="text-center text-2xl font-semibold">Divorce Law</h2>
+              <p class="text-gray-500 text-sm font-medium">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              <div class="card-actions justify-center pt-5">
+                <button class="px-3 py-[0.45rem] bg-theme text-white hover:text-gray-800 border-none rounded-full"><i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+          <!-- sixth practice -->
+          <div class="card px-12 rounded-none border-t-[1.5px] space-y-3 pt-16 pb-10">
+            <figure>
+              <img
+                src="/images/tax.png"
+                alt=""
+              />
+            </figure>
+            <div class="card-body text-center">
+              <h2 class="text-center text-2xl font-semibold">Tax Law</h2>
+              <p class="text-gray-500 text-sm font-medium">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              <div class="card-actions justify-center pt-5">
+                <button class="px-3 py-[0.45rem] bg-theme text-white hover:text-gray-800 border-none rounded-full"><i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <!-- font-awesome link -->
+    <script
+      src="https://kit.fontawesome.com/40da276710.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
